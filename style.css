@@ -83,7 +83,8 @@ color:#f4f5f8;
     position: absolute;
     top: 100%;
     left: 50%;
-    
+    opacity: 1;    
+
 }
  .profile__image{
     border-radius: 50%;
