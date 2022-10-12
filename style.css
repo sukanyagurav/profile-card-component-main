@@ -67,7 +67,7 @@ color:#f4f5f8;
     position: relative;
     opacity:0.9;
     animation:2s blurImage ease-in;
-
+    -webkit-animation:2s blurImage ease-in ;
 }
 .profile__content{
     display: flex;
@@ -84,7 +84,6 @@ color:#f4f5f8;
     top: 100%;
     left: 50%;
     opacity: 1;    
-
 }
  .profile__image{
     border-radius: 50%;
@@ -95,20 +94,20 @@ color:#f4f5f8;
     background-size: contain;
     padding: 6px;
     animation:2s blurImage ease-in;
-
+-webkit-animation:2s blurImage ease-in ;
    } 
-img{
-
-}
   
 @keyframes blurImage{
     0% {
+        -webkit-opacity:0.2;
        opacity:0.2
      }
      50% {
+        -webkit-opacity:0.8;
         opacity:0.8
       }
     100%{
+        -webkit-opacity:1;
         opacity:1;
         
     }
@@ -150,20 +149,27 @@ img{
 .profile__social div{
     margin:1.5rem 2rem 0 3rem; 
     animation:2s textUp ease-out;
+    -webkit-animation:2s textUp ease-out ;
 }
 @keyframes textUp {
     0% {
+        -webkit-opacity:0;
         opacity:0;
         transform:translateY(80%);
+        -webkit-transform:translateY(80%);
     }
     50%{
         opacity:1;
+        -webkit-opacity:1;
         transform:translateY(0%);
+        -webkit-transform:translateY(0%);
 
     }
     100%{
         opacity:1;
+        -webkit-opacity:1;
         transform:translateY(0%);
+        -webkit-transform:translateY(0%);
 
     }
 }
@@ -182,7 +188,7 @@ img{
     grid-column: 3/3;
 }
 .profile__social h3{
-    color:var(--color-grey-blue);
+
     font-weight: 200;
     margin-top: .5rem;
     letter-spacing: 1.2px;
